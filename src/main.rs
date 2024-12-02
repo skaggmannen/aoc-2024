@@ -9,9 +9,14 @@ fn main() {
             println!("Part 1: {}", day1::part1(&input));
             println!("Part 2: {}", day1::part2(&input));
         }
+        "src/day2.txt" => {
+            println!("Part 1: {}", day2::part1(&input));
+            println!("Part 2: {}", day2::part2(&input));
+        }
         _ => println!("Unsupported day!"),
     }
 }
 
 mod day1;
+mod day2;
 mod util;
