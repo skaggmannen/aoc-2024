@@ -1,5 +1,3 @@
-use std::{collections::HashMap, fmt::format, ops::Add};
-
 use crate::util;
 
 pub fn part1(data: &str) -> String {
