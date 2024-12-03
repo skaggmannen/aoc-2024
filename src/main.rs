@@ -13,10 +13,15 @@ fn main() {
             println!("Part 1: {}", day2::part1(&input));
             println!("Part 2: {}", day2::part2(&input));
         }
+        "src/day3.txt" => {
+            println!("Part 1: {}", day3::part1(&input));
+            println!("Part 2: {}", day3::part2(&input));
+        }
         _ => println!("Unsupported day!"),
     }
 }
 
 mod day1;
 mod day2;
+mod day3;
 mod util;
