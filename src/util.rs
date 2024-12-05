@@ -1,4 +1,4 @@
-use std::fs::{read, read_to_string};
+use std::fs::read_to_string;
 
 pub fn to_lines(data: &str) -> Vec<String> {
     data.lines()

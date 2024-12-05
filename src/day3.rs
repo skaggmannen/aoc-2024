@@ -1,5 +1,3 @@
-use crate::util;
-
 use regex::Regex;
 
 pub fn part1(data: &str) -> String {
