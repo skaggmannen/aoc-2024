@@ -25,6 +25,10 @@ fn main() {
             println!("Part 1: {}", day5::part1(&input));
             println!("Part 2: {}", day5::part2(&input));
         }
+        "src/day6.txt" => {
+            println!("Part 1: {}", day6::part1(&input));
+            println!("Part 2: {}", day6::part2(&input));
+        }
         _ => println!("Unsupported day!"),
     }
 }
@@ -34,4 +38,5 @@ mod day2;
 mod day3;
 mod day4;
 mod day5;
+mod day6;
 mod util;
