@@ -133,22 +133,6 @@ fn parse_input(data: &str) -> Map {
     }
 }
 
-fn is_valid(rules: &HashMap<u32, Vec<u32>>, update: &Vec<u32>) -> bool {
-    for i in 0..update.len() {
-        let key = update[i];
-
-        if let Some(rules) = rules.get(&key) {
-            for page in rules {
-                if update[0..i].contains(page) {
-                    return false;
-                }
-            }
-        }
-    }
-
-    true
-}
-
 #[cfg(test)]
 mod tests {
     use super::*;
