@@ -1,6 +1,11 @@
-use std::collections::HashMap;
+fn main() {
+    let input = util::read_input("day7/input.txt");
 
-pub fn part1(data: &str) -> String {
+    println!("Part 1: {}", part1(&input));
+    println!("Part 2: {}", part2(&input));
+}
+
+fn part1(data: &str) -> String {
     let lines = parse_input(data);
     
     const OPERATORS: [&'static str; 2] = ["+", "*"];
@@ -20,7 +25,7 @@ pub fn part1(data: &str) -> String {
     format!("{}", result)
 }
 
-pub fn part2(data: &str) -> String {
+fn part2(data: &str) -> String {
     
     let lines = parse_input(data);
     

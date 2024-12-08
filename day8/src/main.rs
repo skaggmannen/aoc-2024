@@ -1,6 +1,13 @@
+fn main() {
+    let input = util::read_input("day8/input.txt");
+
+    println!("Part 1: {}", part1(&input));
+    println!("Part 2: {}", part2(&input));
+}
+
 use std::collections::{HashMap, HashSet};
 
-pub fn part1(data: &str) -> String {
+fn part1(data: &str) -> String {
     let mut city = City::parse(data);
 
     city.find_anti_nodes(false);
@@ -8,7 +15,7 @@ pub fn part1(data: &str) -> String {
     format!("{}", city.anti_nodes.len())
 }
 
-pub fn part2(data: &str) -> String {
+fn part2(data: &str) -> String {
     let mut city = City::parse(data);
 
     city.find_anti_nodes(true);

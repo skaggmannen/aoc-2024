@@ -1,3 +1,10 @@
+fn main() {
+    let input = util::read_input("day3/input.txt");
+
+    println!("Part 1: {}", part1(&input));
+    println!("Part 2: {}", part2(&input));
+}
+
 use regex::Regex;
 
 pub fn part1(data: &str) -> String {

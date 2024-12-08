@@ -1,6 +1,12 @@
+fn main() {
+    let input = util::read_input("day6/input.txt");
+
+    println!("Part 1: {}", part1(&input));
+    println!("Part 2: {}", part2(&input));
+}
 use std::collections::HashMap;
 
-pub fn part1(data: &str) -> String {
+fn part1(data: &str) -> String {
     let mut map = parse_input(data);
 
     map.run();
@@ -8,7 +14,7 @@ pub fn part1(data: &str) -> String {
     format!("{}", map.guard_route.len())
 }
 
-pub fn part2(data: &str) -> String {
+fn part2(data: &str) -> String {
     let original = parse_input(data);
 
     let mut first = original.clone();

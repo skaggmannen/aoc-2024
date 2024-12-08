@@ -1,6 +1,11 @@
-use std::collections::HashMap;
+fn main() {
+    let input = util::read_input("day1/input.txt");
 
-use crate::util;
+    println!("Part 1: {}", part1(&input));
+    println!("Part 2: {}", part2(&input));
+}
+
+use std::collections::HashMap;
 
 pub fn part1(data: &str) -> String {
     let lines = util::to_lines(data);

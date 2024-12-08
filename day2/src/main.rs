@@ -1,4 +1,9 @@
-use crate::util;
+fn main() {
+    let input = util::read_input("day2/input.txt");
+
+    println!("Part 1: {}", part1(&input));
+    println!("Part 2: {}", part2(&input));
+}
 
 pub fn part1(data: &str) -> String {
     let lines = util::to_lines(data);
