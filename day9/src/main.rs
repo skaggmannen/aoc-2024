@@ -10,11 +10,7 @@ use std::fmt::Debug;
 fn part1(data: &str) -> String {
     let mut disk = Disk::parse(data);
 
-    println!("Initial:     {:?}", disk);
-
     disk.reallocate();
-
-    println!("Reallocated: {:?}", disk);
 
     format!("{}", disk.checksum())
 }
@@ -23,13 +19,7 @@ fn part1(data: &str) -> String {
 fn part2(data: &str) -> String {
     let mut disk = SizedDisk::parse(data);
 
-    println!("Initial:");
-    println!("{:?}", disk);
-
     disk.reallocate();
-
-    println!("Reallocated:");
-    println!("{:?}", disk);
 
     format!("{}", disk.checksum())
 }
