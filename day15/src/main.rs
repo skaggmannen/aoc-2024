@@ -175,11 +175,8 @@ struct WideMap {
 
 impl WideMap {
     fn solve(&mut self) -> i32 {
-        let mut i = 0;
         let instructions = self.instructions.clone();
         for d in instructions.iter() {
-            i += 1;
-
             self.move_robot(*d);
         }
 
