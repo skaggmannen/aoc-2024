@@ -20,7 +20,6 @@ fn part2(input: &str) -> String {
 }
 
 struct Problem {
-    size: (i32, i32),
     walls: HashSet<(i32, i32)>,
     start: (i32, i32),
     end: (i32, i32),
@@ -48,7 +47,6 @@ impl Problem {
 
         }
         Problem {
-            size: (lines[0].len() as i32, lines.len() as i32),
             walls,
             start: start.unwrap(),
             end: end.unwrap(),
