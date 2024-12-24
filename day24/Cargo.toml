@@ -1,11 +1,9 @@
 [package]
-name = "aoc-2024"
+name = "day24"
 version = "0.1.0"
 edition = "2021"
-
-[workspace]
-members = ["util", "day*"]
 
 [dependencies]
 dot_graph = "0.2.3"
 itertools = "0.13.0"
+util = { path = "../util" }

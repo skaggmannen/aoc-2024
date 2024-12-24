@@ -15,6 +15,7 @@ dependencies = [
 name = "aoc-2024"
 version = "0.1.0"
 dependencies = [
+ "dot_graph",
  "itertools",
 ]
 
@@ -131,6 +132,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "day24"
+version = "0.1.0"
+dependencies = [
+ "dot_graph",
+ "itertools",
+ "util",
+]
+
+[[package]]
 name = "day3"
 version = "0.1.0"
 dependencies = [
@@ -186,6 +196,12 @@ version = "0.1.0"
 dependencies = [
  "util",
 ]
+
+[[package]]
+name = "dot_graph"
+version = "0.2.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b310edef633ba5dde93f7b916ca82ee872dd3571c22f4ee98b44877d40995e2e"
 
 [[package]]
 name = "either"
